@@ -1,0 +1,47 @@
+@import "./vars";
+@import "./typography/typo.vars.less";
+@import "./buttons.less";
+@import "./breakpoints.vars.less";
+
+img.avatar{
+  max-width: 50px;
+  margin: 5px;
+  border-radius: 50px;
+}
+
+img.logo{
+  max-width: 100px;
+  border-radius: 50px;
+  background: #9e9e9ed6;
+}
+
+.table{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+  border-collapse: collapse;
+  tr{
+    th{
+      text-align: left;
+    }
+    td{
+      margin: 5px;
+      span{
+        word-break: break-word;
+      }
+
+    }
+  }
+}
+
+.table-responsive{
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+  @media @all-small-devices {
+
+  }
+

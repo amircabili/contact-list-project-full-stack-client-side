@@ -1,0 +1,53 @@
+{
+  "form_fields": [
+    {
+      "key": "full_name",
+      "label": "Full Name",
+      "type": "text",
+      "order": 1,
+      "validators": ["required"]
+    },
+    {
+      "key": "full_address",
+      "label": "Full Address",
+      "type": "text",
+      "order": 2,
+      "validators": ["required"]
+    },
+    {
+      "key": "phone",
+      "label": "Phone",
+      "type": "tel",
+      "order": 3,
+      "validators": ["required", "phone"]
+    },
+    {
+      "key": "cell",
+      "label": "Cell",
+      "type": "tel",
+      "order": 4,
+      "validators": ["required", "phone"]
+    },
+    {
+      "key": "registration_date",
+      "label": "Registration Date",
+      "type": "date",
+      "order": 5,
+      "validators": ["required" ]
+    },
+    {
+      "key": "age",
+      "label": "Age",
+      "type": "number",
+      "order": 6,
+      "validators": ["required" ]
+    },
+    {
+      "key": "email",
+      "label": "Email",
+      "type": "email",
+      "order": 7,
+      "validators": ["required", "email"]
+    }
+  ]
+}

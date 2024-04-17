@@ -1,0 +1,45 @@
+<div class="container mt-4">
+  <div class="wrap-contacts">
+    <div class="row">
+      <div class="headerText text-center">
+        <h2 class="text-center">Contacts List</h2>
+      </div>
+    </div>
+    <table class="table table-responsive">
+      <thead>
+      <tr>
+        <th> </th>
+        <th>Full Name</th>
+        <th>Full Address</th>
+        <th>Phone</th>
+        <th>Cell</th>
+        <th>Registration Date</th>
+        <th>Age</th>
+        <th>E-mail</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td><img class="avatar" src="{{contact.image ? contact.image : '/assets/images/contact.png'}}" /></td>
+        <td><span>{{ contact.full_name}}</span></td>
+        <td><span>{{ contact.full_address}}</span></td>
+        <td><span>{{ contact.phone}}</span></td>
+        <td><span>{{ contact.cell}}</span></td>
+        <td><span>{{ contact.registration_date}}</span></td>
+        <td><span>{{ contact.age}}</span></td>
+        <td><span>{{ contact.email}}</span></td>
+        <td class="white-space-no-wrap">
+          <button class="btn btn-primary" (click)="editContact(contact)">Edit</button> <!-- Edit button -->
+          <button class="btn btn-danger" (click)="deleteContact(contact)">Delete</button> <!-- Delete button -->
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="row">
+      <div class="text-center">
+        <button routerLink="/contact-form" class="btn btn-primary">Add New Contact</button>
+      </div>
+    </div>
+  </div>
+</div>
