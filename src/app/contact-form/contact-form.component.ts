@@ -74,7 +74,9 @@ export class ContactFormComponent implements OnInit {
       const contactData = history.state.contact;
       if (contactData) {
         const updatedContact = this.contactForm.value;
-        this.contactService.updateContact(contactData.id, updatedContact);
+        this.contactService.updateContact(contactData._id, updatedContact).subscribe(response => {
+          console.log('Response from updateContact:', response);
+        });
       } else {
         const newContact = this.contactForm.value;
         this.contactService.addContact(newContact).subscribe(response => {
