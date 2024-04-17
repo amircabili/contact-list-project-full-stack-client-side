@@ -1,27 +1,64 @@
-# Client
+# Contacts App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+The Contacts app is a simple Angular application for managing contacts. It allows users to view, add, update, and delete contacts.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- View a list of contacts
+- Add a new contact
+- Update an existing contact
+- Delete a contact
+- Progressive Web App (PWA) support
+- Offline functionality with service workers
+- Manifest file for a web app-like experience
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone the repository:
 
-## Build
+   ```bash
+   git clone https://github.com/amircabili/contact-list-project-full-stack-client-side.git
+Navigate to the project directory:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+bash
+Copy code
+cd contact-list-project-full-stack-client-side
+Install dependencies:
 
-## Running unit tests
+bash
+Copy code
+npm install
+Usage
+Start the Angular Development Server:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+bash
+Copy code
+ng serve
+Open your browser and navigate to http://localhost:4200/ to view the app.
 
-## Running end-to-end tests
+Start the Node.js Server (Backend):
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Before running the Angular app, you need to start the Node.js server to provide the backend functionality.
 
-## Further help
+bash
+Copy code
+git clone https://github.com/amircabili/contact-list-project-full-stack-server.git
+cd contact-list-project-full-stack-server
+npm install
+node server.js
+The server will be running on http://localhost:3000/.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Configuration
+Modify the environment.ts file to configure backend API endpoints and other environment-specific settings.
+Deployment
+Build the app for production:
+
+bash
+Copy code
+ng build --prod
+Deploy the generated dist folder to your web server or hosting platform.
+
+Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvement, please create an issue or submit a pull request.
+
+License
