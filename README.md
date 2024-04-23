@@ -12,7 +12,7 @@ The Contacts app is a simple Angular application for managing contacts. It allow
 - Offline functionality with service workers
 - Manifest file for a web app-like experience
 
-## Installation
+## Installation for client and server
 
 1. Clone the repository:
 
